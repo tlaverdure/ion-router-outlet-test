@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>page1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/tabs', 'tab1', 'page1', 'child1']">
+    Display Page 1 - Child 1 Content
+  </ion-button>
+
+  <ion-button [routerLink]="['/tabs', 'tab1', 'page1', 'child2']">
+    Display Page 1 - Child 2 Content
+  </ion-button>
+
+  <ion-button [routerLink]="['/page2']">
+    Go to Page 2
+  </ion-button>
+
+  <ion-button [routerLink]="['/page3']">
+    Go to Page 3
+  </ion-button>
+
+  <router-outlet></router-outlet>
+
+</ion-content>

@@ -13,7 +13,8 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../tab1/tab1.module#Tab1PageModule'
-          }
+          },
+          { path: 'page1', loadChildren: '../page1/page1.module#Page1PageModule' },
         ]
       },
       {
@@ -54,4 +55,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }
